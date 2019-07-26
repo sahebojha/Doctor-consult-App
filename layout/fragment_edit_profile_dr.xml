@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".doctors.EditProfileDrFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="12sp"
+                android:hint="Name"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/phnno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="  Phone"
+                android:inputType="phone"
+                android:drawableLeft="@drawable/ic_smartphone_black_24dp"/>
+
+
+            <EditText
+                android:id="@+id/addrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="20dp"
+                android:hint="Address"
+                android:drawablePadding="12dp"
+                android:drawableLeft="@drawable/ic_home_black_24dp"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="  PIN Code"
+                android:drawableLeft="@drawable/ic_person_pin_circle_black_24dp"
+                android:inputType="numberDecimal"
+
+                />
+
+            <Spinner
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:entries="@array/state">
+            </Spinner>
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Update"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

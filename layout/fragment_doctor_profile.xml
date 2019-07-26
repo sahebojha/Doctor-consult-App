@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DoctorProfileFragment"
+    android:background="@color/whiteBackground">
+
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/doctor_image_patient"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/doctor_name_patient"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Doctor Name"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="24sp"/>
+
+                        <TextView
+                            android:id="@+id/doctor_specialization_patient"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Specilist"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:id="@+id/doctor_phone_patient"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp"/>
+                        <RatingBar
+                            android:id="@+id/doctor_rating_patient"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:isIndicator="true"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:layout_marginBottom="10dp"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Visiting Place"
+                        android:paddingHorizontal="15dp"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <Spinner
+                        android:id="@+id/doctor_place_patient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="15dp"
+                        android:layout_marginBottom="10dp">
+
+                    </Spinner>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/first_hide"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal">
+                            <TextView
+                                android:id="@+id/doctor_place_name_patient"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Visiting PLace Name"
+                                android:textSize="18sp"
+                                android:textColor="@color/colorPrimary"/>
+                            <TextView
+                                android:id="@+id/doctor_place_phone_patient"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Phone"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorPrimary"/>
+                            <TextView
+                                android:id="@+id/doctor_place_address_patient"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Address"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorPrimary"/>
+                            <TextView
+                                android:id="@+id/doctor_place_pin_patient"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pin"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorPrimary"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                            <Spinner
+                                android:id="@+id/doctor_place_weekday_patient"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1">
+
+
+                            </Spinner>
+
+                            <LinearLayout
+                                android:id="@+id/second_hide"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_marginTop="8dp">
+                                <Spinner
+                                    android:id="@+id/doctor_place_time_patient"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                </Spinner>
+                            </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/doctor_book_date_patient"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="26sp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginTop="15dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    <Button
+        android:id="@+id/doctor_book_appointment_patient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@color/whiteBackground"
+        android:textSize="20sp"
+        android:text="@string/book_appointment"
+        android:layout_margin="5dp"
+        />
+</LinearLayout>

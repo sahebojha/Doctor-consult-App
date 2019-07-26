@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:background="@color/whiteBackground">
+    <TextView
+        android:id="@+id/dialog_doctor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor Name"
+        android:textSize="24sp"
+        android:textColor="@color/primaryText"
+        android:layout_gravity="center_horizontal"/>
+    <RatingBar
+        android:id="@+id/dialog_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:isIndicator="false" />
+    <Button
+        android:id="@+id/dialog_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Submit"
+        android:layout_margin="5dp"
+        android:focusable="false"
+        android:background="@color/colorAccent"
+        android:textColor="@color/whiteBackground"
+        android:textSize="20dp"
+        />
+
+</LinearLayout>

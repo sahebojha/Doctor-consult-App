@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_book_appointment"
+            android:icon="@drawable/ic_playlist_add_black_24dp"
+            android:title="Book Appointment" />
+        <item
+            android:id="@+id/nav_my_appointments"
+            android:icon="@drawable/ic_insert_drive_file_black_24dp"
+            android:title="My Appointments" />
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="My Profile" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/ic_call_black_24dp"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+
+</menu>
